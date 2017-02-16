@@ -1,0 +1,41 @@
+.process {
+  height: 400px;
+  &__container {
+    @include vertical-align();
+  }
+  &__icon {
+    font-size: 160px;
+    line-height: 0;
+  }
+  &__title {
+    text-align: center;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .process {
+    height: auto;
+    &__container {
+      transform: none;
+      top: 0;
+      height: 300px;
+    }
+    &__content {
+      width: 75%;
+      margin: 0 auto;
+      height: 100%;
+    }
+    &__icon-wrapper {
+      @include vertical-align();
+    }
+    &__text {
+      @include vertical-align();
+    }
+    &__title {
+      text-align: left;
+    }
+    &__description {
+      color: #555;
+    }
+  }
+}

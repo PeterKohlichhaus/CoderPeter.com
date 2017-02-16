@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.sass-cache/
+Disallow: /gulpfile.js
+Disallow: /.gitignore
+
+Sitemap: http://coderpeter.com/sitemap.xml

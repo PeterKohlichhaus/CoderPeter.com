@@ -1,0 +1,42 @@
+.header {
+  background-color: #111;
+  background-image: url(/images/header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-y: hidden;
+  &__text {
+    margin: 0 auto;
+    color: #F5F5F5;
+    padding: 15px;
+    @include vertical-align();
+  }
+  &__occupation {
+    word-spacing: .17em;
+    display: block;
+  }
+  &__about {
+    color: #D5D5D5;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .header {
+    height: 600px;
+    &__text {
+      max-width: $container-sm;
+    }
+    &__occupation {
+      display: block;
+      letter-spacing: .055em;
+      word-spacing: .15em;
+    }
+    &__about {
+      font-size: 1.4em;
+      margin-top: 30px;
+    }
+  }
+}

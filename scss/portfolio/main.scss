@@ -1,0 +1,50 @@
+@mixin vertical-align($top:50%) {
+  position: relative;
+  top: $top;
+  transform: translateY(-50%);
+}
+
+@import '../bootstrap/variables';
+@import 'header';
+@import 'process';
+@import 'footer';
+body {
+  line-height: 1.6;
+  background-color: #FAFAFA;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8em;
+}
+
+h1 {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.process-seperator {
+  border-bottom: 1px solid #aaa;
+}
+
+@media (min-width: $screen-sm-min) {
+  h1 {
+    font-size: 4em;
+    line-height: 1.3;
+    letter-spacing: .035em;
+    word-spacing: .12em;
+    display: inline-block;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 2.4em;
+  }
+}
