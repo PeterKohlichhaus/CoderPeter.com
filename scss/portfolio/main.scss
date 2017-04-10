@@ -7,22 +7,30 @@
 @import '../bootstrap/variables';
 @import 'header';
 @import 'process';
-@import 'footer';
+@import 'contact';
 body {
   line-height: 1.6;
   background-color: #FAFAFA;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.8em;
+  font-family: 'Monsterrat', sans-serif;
 }
 
 h1 {
-  text-align: center;
+    font-size: 1.6em;
+}
+
+h2 {
+    letter-spacing: .1em;
+    font-size: 2em;
+}
+
+h3 {
+  letter-spacing: .1em;
 }
 
 textarea {

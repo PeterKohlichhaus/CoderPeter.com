@@ -3,8 +3,6 @@
   background-image: url(/images/header.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  margin: 0;
   padding: 0;
   border: 0;
   overflow-y: hidden;
@@ -23,11 +21,16 @@
   }
 }
 
+.page-header {
+  height: 420px !important;
+  margin: 0 !important;
+}
+
 @media (min-width: $screen-sm-min) {
   .header {
     height: 600px;
     &__text {
-      max-width: $container-sm;
+      // max-width: 75%;
     }
     &__occupation {
       display: block;

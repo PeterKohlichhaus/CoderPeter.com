@@ -1,0 +1,113 @@
+.contact {
+    color: #F5F5F5;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #111;
+    &__input-group {
+        margin: 10px 0;
+    }
+    &__info-row {
+        list-style: none;
+        border-bottom: 1px solid #333;
+        padding: 15px 0;
+    }
+    &__label {
+        display: inline;
+        font-size: 1em;
+        color: #555;
+        font-weight: bolder;
+        margin: 0;
+        letter-spacing: .15em;
+        padding: 0;
+    }
+    &__info {
+        padding: 0;
+        display: inline;
+        font-weight: bolder;
+        font-size: 1em;
+        color: #59f;
+        margin-bottom: 4px;
+    }
+    &__input {
+        &.form-control {
+            color: #111;
+            width: 100%;
+            padding: 12px;
+            height: auto;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        &--textarea {
+            &.form-control {
+                height: 120px;
+            }
+        }
+        &--button {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: #59f;
+            border: 0;
+            font-size: 1.2em;
+            color: #F0F0F0;
+            &:hover, &:focus {
+                background-color: #07f;
+                color: #FFF;
+                box-shadow: 0 0 2px 1px rgba(0, 100, 255, .5);
+            }
+        }
+    }
+    &__text {
+        color: #F5F5F5;
+        height: 100%;
+        min-height: 330px;
+    }
+    &__title {
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__description {
+        color: #ccc;
+        font-size: 1.2em;
+        margin-bottom: 26px;
+    }
+    &__form {
+        box-shadow: none;
+    }
+    &__social {
+        list-style: none;
+        display: table;
+        margin-bottom: 0;
+    }
+    &__social li {
+        padding: 0 2px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    .contact {
+        height: auto;
+        &__form-wrapper {
+            float: right;
+            margin-top: 50px;
+        }
+        &__title, &__form {
+            padding: 0;
+        }
+        &__title {
+            text-align: left;
+        }
+        &__social {
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+    }
+}
+
+.navbar-form {
+    width: 100%;
+}
